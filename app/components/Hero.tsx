@@ -1,18 +1,40 @@
 "use client";
+import { useEffect, useRef, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 
 export default function Hero() {
+  const videoRef = useRef<HTMLVideoElement>(null);
+  const [showNeon, setShowNeon] = useState(false);
+
+  useEffect(() => {
+    const video = videoRef.current;
+    if (video) {
+      video.play().catch((err) => {
+        // Autoplay might be blocked on some browsers
+        console.warn("Autoplay failed:", err);
+      });
+    }
+
+    // Delay the neon effect a bit for smoother load
+    const neonTimeout = setTimeout(() => {
+      setShowNeon(true);
+    }, 1000);
+
+    return () => clearTimeout(neonTimeout);
+  }, []);
+
   return (
     <section className="relative w-full min-h-screen flex items-center justify-center overflow-hidden text-white">
       {/* Background Video */}
       <video
-        autoPlay
+        ref={videoRef}
         loop
         muted
         playsInline
-        preload="none"
+        preload="auto"
         className="absolute inset-0 w-full h-full object-cover z-0"
+        poster="/images/viola-fallback.jpg"
       >
         <source src="/videos/viola.mp4" type="video/mp4" />
         Your browser does not support the video tag.
@@ -27,9 +49,11 @@ export default function Hero() {
           initial={{ opacity: 0, y: -30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-5xl md:text-6xl font-bold tracking-tight leading-tight neon-text"
+          className={`text-5xl md:text-6xl font-bold tracking-tight leading-tight ${
+            showNeon ? "neon-text" : ""
+          }`}
         >
-          Viola AI
+          Viola Smarter Medicine through Genomic Insight
         </motion.h1>
 
         <motion.p
