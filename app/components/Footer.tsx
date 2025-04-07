@@ -1,6 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import { Mail, Send } from "lucide-react";
+import Link from "next/link";
 
 export default function FooterComponent() {
   return (
@@ -32,29 +33,29 @@ export default function FooterComponent() {
           </h4>
           <ul className="space-y-2 text-sm text-white/70">
             <li>
-              <a href="/" className="hover:text-purple-400">
+              <Link href="/" className="hover:text-purple-400">
                 Home
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/about" className="hover:text-purple-400">
+              <Link href="/about" className="hover:text-purple-400">
                 About Us
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/features" className="hover:text-purple-400">
+              <Link href="/features" className="hover:text-purple-400">
                 Our Features
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/guide" className="hover:text-purple-400">
+              <Link href="/guide" className="hover:text-purple-400">
                 Guide
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/contact" className="hover:text-purple-400">
+              <Link href="/contact" className="hover:text-purple-400">
                 Contact
-              </a>
+              </Link>
             </li>
           </ul>
         </motion.div>

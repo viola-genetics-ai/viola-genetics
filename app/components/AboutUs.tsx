@@ -1,5 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function AboutUs() {
   return (
@@ -27,17 +28,20 @@ export default function AboutUs() {
           </p>
         </motion.div>
 
-        {/* Optional: Visual / Glow Block */}
+        {/* Visual Block with Next.js Image */}
         <motion.div
           initial={{ opacity: 0, x: 30 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
           className="relative inline-block rounded-xl bg-gradient-to-br from-purple-500/30 to-blue-500/30 border border-purple-400/20 shadow-[0_0_40px_#a855f7aa] backdrop-blur-md p-2"
         >
-          <img
+          <Image
             src="/images/viola.png"
             alt="Viola AI"
+            width={500} // Sesuaikan ukuran sebenarnya
+            height={500} // Sesuaikan ukuran sebenarnya
             className="w-full h-full object-contain rounded-lg"
+            priority // jika ingin dimuat segera untuk LCP
           />
         </motion.div>
       </div>
