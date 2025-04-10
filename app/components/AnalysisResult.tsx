@@ -34,11 +34,11 @@ const results: ResultItem[] = [
 const getStatusIcon = (status?: string) => {
   switch (status) {
     case "success":
-      return <CheckCircle className="text-green-400 w-5 h-5" />;
+      return <CheckCircle className="text-green-500 w-5 h-5" />;
     case "warning":
-      return <AlertTriangle className="text-yellow-400 w-5 h-5" />;
+      return <AlertTriangle className="text-yellow-500 w-5 h-5" />;
     case "info":
-      return <Activity className="text-blue-400 w-5 h-5" />;
+      return <Activity className="text-black w-5 h-5" />;
     default:
       return null;
   }
@@ -46,14 +46,14 @@ const getStatusIcon = (status?: string) => {
 
 export default function AnalysisResult() {
   return (
-    <section className="w-full bg-black text-white py-24 px-6 md:px-12">
+    <section className="w-full bg-white text-black py-24 px-6 md:px-12">
       <div className="max-w-4xl mx-auto">
         {/* 🧬 Title */}
         <motion.h2
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="text-4xl md:text-5xl font-bold text-center mb-4 bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent"
+          className="text-4xl md:text-5xl font-bold text-center mb-4 bg-gradient-to-r from-yellow-400 to-yellow-500 bg-clip-text text-transparent"
         >
           Analysis Result
         </motion.h2>
@@ -63,10 +63,10 @@ export default function AnalysisResult() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.2, duration: 0.6 }}
-          className="text-center text-sm md:text-base text-white/60 mb-10"
+          className="text-center text-sm md:text-base text-gray-600 mb-10"
         >
           Used by:{" "}
-          <span className="text-purple-300 font-medium">
+          <span className="text-black font-medium">
             National Cancer Research Institute
           </span>
         </motion.p>
@@ -76,19 +76,19 @@ export default function AnalysisResult() {
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.6 }}
-          className="bg-white/5 border border-white/10 backdrop-blur-md rounded-2xl p-8 shadow-[0_0_50px_rgba(168,85,247,0.3)]"
+          className="bg-white border border-black/10 rounded-xl p-8"
         >
           <div className="space-y-6">
             {results.map((item, idx) => (
               <div
                 key={idx}
-                className="flex justify-between items-start md:items-center flex-col md:flex-row border-b border-white/10 pb-4"
+                className="flex justify-between items-start md:items-center flex-col md:flex-row border-b border-black/10 pb-4"
               >
-                <div className="flex items-center gap-3 text-purple-300">
+                <div className="flex items-center gap-3 text-yellow-600">
                   {getStatusIcon(item.status)}
-                  <span className="font-semibold">{item.label}</span>
+                  <span className="font-semibold text-black">{item.label}</span>
                 </div>
-                <div className="text-white/90 text-right">{item.value}</div>
+                <div className="text-gray-700 text-right">{item.value}</div>
               </div>
             ))}
           </div>
@@ -99,12 +99,12 @@ export default function AnalysisResult() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.3, duration: 0.6 }}
-          className="text-center text-sm md:text-base text-white/60 mt-8"
+          className="text-center text-sm md:text-base text-gray-600 mt-8"
         >
           For usage examples and detailed instructions, please refer to our{" "}
           <a
             href="/guide"
-            className="text-purple-400 hover:text-purple-300 underline transition-colors"
+            className="text-yellow-500 hover:text-yellow-600 underline transition-colors"
           >
             guide page
           </a>

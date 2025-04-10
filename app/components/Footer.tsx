@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function FooterComponent() {
   return (
-    <footer className="bg-black text-white py-16 px-6 md:px-12 border-t border-white/10">
+    <footer className="bg-black/90 text-white py-16 px-6 md:px-12 border-t border-white/10">
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
         {/* Brand Info */}
         <motion.div
@@ -13,10 +13,10 @@ export default function FooterComponent() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <h3 className="text-2xl font-bold bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent mb-4">
+          <h3 className="text-2xl font-bold bg-gradient-to-r from-yellow-400 to-blue-400 bg-clip-text text-transparent mb-4">
             Viola AI
           </h3>
-          <p className="text-white/60 text-sm">
+          <p className="text-gray-500 text-sm">
             Empowering healthcare with AI-driven diagnostics and intelligent
             analysis.
           </p>
@@ -28,32 +28,32 @@ export default function FooterComponent() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
-          <h4 className="text-lg font-semibold mb-4 text-purple-300">
+          <h4 className="text-lg font-semibold mb-4 text-yellow-300">
             Quick Links
           </h4>
-          <ul className="space-y-2 text-sm text-white/70">
+          <ul className="space-y-2 text-sm text-gray-500">
             <li>
-              <Link href="/" className="hover:text-purple-400">
+              <Link href="/" className="hover:text-yellow-400">
                 Home
               </Link>
             </li>
             <li>
-              <Link href="/about" className="hover:text-purple-400">
+              <Link href="/about" className="hover:text-yellow-400">
                 About Us
               </Link>
             </li>
             <li>
-              <Link href="/features" className="hover:text-purple-400">
+              <Link href="/features" className="hover:text-yellow-400">
                 Our Features
               </Link>
             </li>
             <li>
-              <Link href="/guide" className="hover:text-purple-400">
+              <Link href="/guide" className="hover:text-yellow-400">
                 Guide
               </Link>
             </li>
             <li>
-              <Link href="/contact" className="hover:text-purple-400">
+              <Link href="/contact" className="hover:text-yellow-400">
                 Contact
               </Link>
             </li>
@@ -66,10 +66,10 @@ export default function FooterComponent() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <h4 className="text-lg font-semibold mb-4 text-purple-300">
+          <h4 className="text-lg font-semibold mb-4 text-yellow-300">
             Contact Us
           </h4>
-          <ul className="space-y-4 text-sm text-white/70">
+          <ul className="space-y-4 text-sm text-gray-500">
             <li className="flex items-center gap-2">
               <Send className="w-4 h-4 text-blue-400" />
               <a
@@ -81,7 +81,7 @@ export default function FooterComponent() {
               </a>
             </li>
             <li className="flex items-center gap-2">
-              <Mail className="w-4 h-4 text-purple-400" />
+              <Mail className="w-4 h-4 text-yellow-400" />
               <a href="mailto:support@viola.ai">support@viola.ai</a>
             </li>
             <li className="flex items-center gap-2">
@@ -106,7 +106,7 @@ export default function FooterComponent() {
         </motion.div>
       </div>
 
-      <div className="mt-12 border-t border-white/10 pt-6 text-center text-sm text-white/50">
+      <div className="mt-12 border-t border-white/10 pt-6 text-center text-sm text-gray-500">
         © {new Date().getFullYear()} Viola AI. All rights reserved.
       </div>
     </footer>
