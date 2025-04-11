@@ -6,6 +6,7 @@ import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import OurFeatures from "./components/OurFeatures";
 import OurTeam from "./components/OurTeam";
+import Roadmap from "./components/Roadmap";
 export default function Home() {
   return (
     <>
@@ -13,6 +14,7 @@ export default function Home() {
       <Hero />
       <AboutUs />
       <OurFeatures />
+      <Roadmap />
       <OurTeam />
       <AnalysisResult />
       <FaqSection />

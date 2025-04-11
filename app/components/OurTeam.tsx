@@ -42,7 +42,7 @@ export default function OurTeam() {
           {teamMembers.map((member, index) => (
             <div
               key={index}
-              className="bg-yellow-500 p-6 rounded-2xl shadow-lg group hover:bg-[#222240] transition-all duration-300"
+              className="bg-yellow-500 p-6 rounded-2xl shadow-lg group hover:bg-black/80 transition-all duration-300"
             >
               <div className="w-24 h-24 mx-auto relative mb-4 rounded-full overflow-hidden border-2 border-yellow-500 group-hover:scale-105 transition">
                 <Image
