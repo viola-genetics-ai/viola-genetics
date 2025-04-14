@@ -32,7 +32,7 @@ export default function OurTeam() {
         </h2>
         <p className="text-gray-600 mb-16 max-w-2xl mx-auto">
           Meet the visionaries behind{" "}
-          <span className="text-yellow-600 font-semibold">ViolaAI</span> — the
+          <span className="text-yellow-600 font-semibold">Viola Research</span> — the
           pioneers shaping the future of precision medicine through AI and data
           science.
         </p>

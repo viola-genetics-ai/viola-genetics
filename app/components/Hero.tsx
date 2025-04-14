@@ -88,7 +88,7 @@ export default function Hero() {
 
           {/* Image */}
           <video
-            src="/videos/viola2.mp4"
+            src="/videos/viola-video.mp4"
             autoPlay
             loop
             muted

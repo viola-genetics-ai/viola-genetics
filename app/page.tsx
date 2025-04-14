@@ -8,6 +8,7 @@ import Navbar from "./components/Navbar";
 import OurFeatures from "./components/OurFeatures";
 import OurTeam from "./components/OurTeam";
 import Roadmap from "./components/Roadmap";
+import DnaSequence from "./components/DnaSequence";  
 export default function Home() {
   return (
     <>
@@ -17,6 +18,7 @@ export default function Home() {
       <OurFeatures />
       <Roadmap />
       <OurTeam />
+      <DnaSequence />
       <AnalysisResult />
       <EarlyAccess />
       <FaqSection />
