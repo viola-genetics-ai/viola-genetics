@@ -34,7 +34,7 @@ export default function Navbar() {
           href="/"
           className="text-xl font-bold tracking-wide z-10"
         >
-          Viola<span className="text-yellow-500">AI</span>
+          Viola<span className="text-yellow-500">Research</span>
         </Link>
 
         {/* Centered Desktop Menu */}
