@@ -1,5 +1,6 @@
 import AboutUs from "./components/AboutUs";
 import AnalysisResult from "./components/AnalysisResult";
+import EarlyAccess from "./components/EarlyAccess";
 import FaqSection from "./components/Faq";
 import FooterComponent from "./components/Footer";
 import Hero from "./components/Hero";
@@ -17,6 +18,7 @@ export default function Home() {
       <Roadmap />
       <OurTeam />
       <AnalysisResult />
+      <EarlyAccess />
       <FaqSection />
       <FooterComponent />
     </>

@@ -103,7 +103,7 @@ export default function AnalysisResult() {
         >
           For usage examples and detailed instructions, please refer to our{" "}
           <a
-            href="/guide"
+            href="/pages/login"
             className="text-yellow-500 hover:text-yellow-600 underline transition-colors"
           >
             guide page
