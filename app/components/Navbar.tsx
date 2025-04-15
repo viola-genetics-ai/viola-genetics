@@ -30,10 +30,7 @@ export default function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-4 md:px-8 py-4 flex items-center justify-between relative">
         {/* Brand on the left */}
-        <Link
-          href="/"
-          className="text-xl font-bold tracking-wide z-10"
-        >
+        <Link href="/" className="text-xl font-bold tracking-wide z-10">
           Viola<span className="text-yellow-500">Research</span>
         </Link>
 
@@ -49,23 +46,49 @@ export default function Navbar() {
             href="#roadmap"
             className="hover:text-yellow-500 transition font-medium"
           >
+            About
+          </Link>
+          <Link
+            href="#whitepaper"
+            className="hover:text-yellow-500 transition font-medium"
+          >
+            Features
+          </Link>
+          <Link
+            href="#whitepaper"
+            className="hover:text-yellow-500 transition font-medium"
+          >
+            Analysis
+          </Link>
+          <Link
+            href="#whitepaper"
+            className="hover:text-yellow-500 transition font-medium"
+          >
             Roadmap
           </Link>
           <Link
             href="#whitepaper"
             className="hover:text-yellow-500 transition font-medium"
           >
-            Whitepaper
+            Docs
           </Link>
         </nav>
 
-        {/* Mobile Toggle Button */}
-        <button
-          className="md:hidden text-white z-10"
-          onClick={() => setOpen(!open)}
-        >
-          {open ? <X size={24} /> : <Menu size={24} />}
-        </button>
+        {/* Right: Toggle Button (Mobile) + Connect Wallet (on scroll) */}
+        <div className="flex items-center gap-4 z-10">
+          {/* Show connect wallet only when scrolled */}
+          {scrolled && (
+            <button className="hidden md:inline-flex px-4 py-2 bg-yellow-500 text-black font-semibold rounded-lg shadow hover:bg-yellow-400 transition">
+              Connect Wallet
+            </button>
+          )}
+          <button
+            className="md:hidden text-white"
+            onClick={() => setOpen(!open)}
+          >
+            {open ? <X size={24} /> : <Menu size={24} />}
+          </button>
+        </div>
       </div>
 
       {/* Mobile Menu */}
