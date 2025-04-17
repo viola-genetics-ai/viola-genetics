@@ -90,7 +90,7 @@ export default function Hero() {
             loop
             muted
             playsInline
-            className="relative z-20 w-[600px] h-[600px] rounded-full object-contain"
+            className="relative z-0 w-[500px] h-[500px] rounded-full object-contain scale-[1.5] mt-34"
           />
         </motion.div>
       </div>
