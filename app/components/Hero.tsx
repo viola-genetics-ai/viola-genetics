@@ -41,13 +41,13 @@ export default function Hero() {
                 showGradient ? "viola-text" : ""
               } transition-all duration-500`}
             >
-              VIOLA
+              VIOLA RESEARCH
             </span>{" "}
             <span className="text-gray-900">
               Smarter Medicine
               <br className="hidden md:block" /> through{" "}
               <span className="underline decoration-yellow-400 decoration-4 underline-offset-4">
-                Genomic Insight
+                Genomic Insight.
               </span>
             </span>
           </motion.h1>
