@@ -33,7 +33,7 @@ export default function FaqSection() {
   };
 
   return (
-    <section className="w-full bg-[#FAECD8] py-24 px-6 md:px-12 text-gray-800">
+    <section className="w-full bg-white py-24 px-6 md:px-12 text-gray-800">
       <div className="max-w-3xl mx-auto">
         <motion.h2
           initial={{ opacity: 0, y: -20 }}

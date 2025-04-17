@@ -39,7 +39,7 @@ export default function Roadmap() {
   return (
     <section
       id="roadmap"
-      className="bg-[#FAECD8] py-24 px-4 md:px-12 text-white relative overflow-hidden"
+      className="bg-white py-24 px-4 md:px-12 text-white relative overflow-hidden"
     >
       <div className="max-w-5xl mx-auto" id="roadmap">
         <h2 className="text-4xl font-bold text-center text-yellow-400 mb-16">

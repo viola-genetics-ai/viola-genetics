@@ -74,14 +74,14 @@ export default function Navbar() {
           </Link>
         </nav>
 
-        {/* Right: Toggle Button (Mobile) + Connect Wallet (on scroll) */}
+        {/* Right: Wallet button and mobile toggle */}
         <div className="flex items-center gap-4 z-10">
-          {/* Show connect wallet only when scrolled */}
-          {scrolled && (
-            <button className="hidden md:inline-flex px-4 py-2 bg-yellow-500 text-black font-semibold rounded-lg shadow hover:bg-yellow-400 transition">
-              Connect Wallet
-            </button>
-          )}
+          {/* Always visible Connect Wallet */}
+          <button className="px-4 py-2 bg-yellow-500 text-black font-semibold rounded-lg shadow hover:bg-yellow-400 transition">
+            Connect Wallet
+          </button>
+
+          {/* Mobile menu toggle */}
           <button
             className="md:hidden text-white"
             onClick={() => setOpen(!open)}

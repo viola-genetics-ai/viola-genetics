@@ -46,7 +46,7 @@ const getStatusIcon = (status?: string) => {
 
 export default function AnalysisResult() {
   return (
-    <section className="w-full bg-[#FAECD8] text-black py-24 px-6 md:px-12">
+    <section className="w-full bg-white text-black py-24 px-6 md:px-12" id="analysis">
       <div className="max-w-4xl mx-auto">
         {/* 🧬 Title */}
         <motion.h2

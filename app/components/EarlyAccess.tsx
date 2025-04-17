@@ -17,7 +17,7 @@ export default function EarlyAccess() {
   };
 
   return (
-    <section className="relative w-full py-20 px-6 md:px-12 bg-[#FAECD8] overflow-hidden">
+    <section className="relative w-full py-20 px-6 md:px-12 bg-white overflow-hidden">
       <div className="max-w-3xl mx-auto text-center relative z-10">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}

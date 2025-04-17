@@ -16,7 +16,7 @@ const fadeIn = {
 
 export default function AboutUs() {
   return (
-    <section className="relative w-full py-28 px-6 md:px-12 bg-[#FAECD8] overflow-hidden" id="aboutUs">
+    <section className="relative w-full py-28 px-6 md:px-12 bg-white overflow-hidden" id="aboutUs">
       {/* Background glow effects */}
       <div className="absolute top-20 left-10 w-40 h-40 bg-yellow-300 opacity-20 rounded-full blur-2xl animate-pulse" />
       <div className="absolute bottom-20 right-10 w-56 h-56 bg-yellow-400 opacity-10 rounded-full blur-3xl animate-ping" />
