@@ -65,10 +65,6 @@ export default function AnalysisResult() {
           transition={{ delay: 0.2, duration: 0.6 }}
           className="text-center text-sm md:text-base text-gray-600 mb-10"
         >
-          Used by:{" "}
-          <span className="text-black font-medium">
-            National Cancer Research Institute
-          </span>
         </motion.p>
 
         {/* 💾 Result Display */}
@@ -95,7 +91,7 @@ export default function AnalysisResult() {
         </motion.div>
 
         {/* 🔗 Guide Link */}
-        <motion.p
+        {/* <motion.p
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.3, duration: 0.6 }}
@@ -109,7 +105,7 @@ export default function AnalysisResult() {
             guide page
           </a>
           .
-        </motion.p>
+        </motion.p> */}
       </div>
     </section>
   );

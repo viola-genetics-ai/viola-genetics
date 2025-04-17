@@ -1,9 +1,20 @@
 "use client";
 import { useEffect, useState } from "react";
-import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
+import { Button } from "@/components/ui/button"; // Pastikan path ini sesuai struktur project-mu
+import { Check, Copy } from "lucide-react";
 
 export default function Hero() {
+  const [copied, setCopied] = useState(false);
+
+  const contractAddress = "-"; // Ganti dengan CA aslimu
+
+  const handleCopy = () => {
+    navigator.clipboard.writeText(contractAddress);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000); // Reset ikon setelah 2 detik
+  };
+
   const [showGradient, setShowGradient] = useState(false);
 
   useEffect(() => {
@@ -47,8 +58,9 @@ export default function Hero() {
             transition={{ delay: 0.2, duration: 0.8 }}
             className="mt-6 text-lg md:text-xl text-gray-700"
           >
-            Revolutionizing cancer treatment with genomic mapping. Discover how
-            Viola AI brings personalized oncology to life.
+            Viola Research is a revolutionary AI-powered platform that
+            integrates genomic mapping and advanced machine learning to provide
+            personalized treatment strategies for complex diseases.
           </motion.p>
 
           <motion.div
@@ -61,14 +73,26 @@ export default function Hero() {
               size="lg"
               className="bg-yellow-400 text-black hover:bg-yellow-500 transition"
             >
-              Learn More
+              <a href="#dna">Get Started</a>
             </Button>
             <Button
               variant="outline"
               size="lg"
-              className="border-black text-black hover:bg-yellow-100 transition"
+              onClick={handleCopy}
+              className="border-black text-black hover:bg-yellow-100 transition flex items-center gap-2"
             >
-              Whitepaper
+              {copied ? (
+                <>
+                  <Check className="w-4 h-4 text-green-500" />
+                  Copied!
+                </>
+              ) : (
+                <>
+                  <Copy className="w-4 h-4" />
+                  CA: {contractAddress.slice(0, 6)}...
+                  {contractAddress.slice(-4)}
+                </>
+              )}
             </Button>
           </motion.div>
         </div>

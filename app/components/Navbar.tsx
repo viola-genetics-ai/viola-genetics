@@ -67,7 +67,7 @@ export default function Navbar() {
             Roadmap
           </Link>
           <Link
-            href="#whitepaper"
+            href="https://viola-research.gitbook.io/viola-ai"
             className="hover:text-yellow-500 transition font-medium"
           >
             Docs

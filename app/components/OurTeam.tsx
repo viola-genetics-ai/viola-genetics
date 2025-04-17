@@ -6,20 +6,20 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const teamMembers = [
   {
-    name: "Li Huxiang",
+    name: "Mikha Lambert",
     role: "CEO & Founder",
     image: "/images/team/user1.jpg",
     bio: "Visionary leader with a passion for AI innovation and business growth. Building bridges between technology and impact.",
   },
   {
-    name: "Harry Tovard",
+    name: "Terry Carson",
     role: "Lead Developer",
     image: "/images/team/user2.avif",
     bio: "Expert in full-stack development and AI infrastructure, leading the codebase with scalable architecture.",
   },
   {
-    name: "Amelia Zhang",
-    role: "Marketing",
+    name: "Kyril Kulikov",
+    role: "Advisor",
     image: "/images/team/user3.png",
     bio: "PhD in molecular biology with a decade of experience in biomedical data science and AI-driven diagnostics.",
   },
@@ -30,13 +30,13 @@ const teamMembers = [
     bio: "Crafts delightful user experiences that bridge complex data with intuitive interfaces. Passionate about health tech.",
   },
   {
-    name: "Fatima Noor",
+    name: "Daniel Rivera",
     role: "Advisor",
     image: "/images/team/user5.webp",
     bio: "Specializes in deep learning models for medical imaging and predictive diagnostics. Advocate for ethical AI.",
   },
   {
-    name: "Daniel Rivera",
+    name: "Fatima Noor",
     role: "Advisor",
     image: "/images/team/user6.webp",
     bio: "Ensures smooth cross-functional operations and drives project execution with precision and excellence.",

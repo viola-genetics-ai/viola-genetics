@@ -4,34 +4,34 @@ import { motion } from "framer-motion";
 
 const roadmapItems = [
   {
-    quarter: "Q1 2025",
-    title: "Foundation Phase",
+    quarter: "April 2025",
+    title: "Preparation & Finalization",
     description:
-      "Kickstart ViolaAI R&D. Form the core team and define the MVP architecture.",
+      "Final UI/UX tests, internal risk engine benchmark (93% accuracy), token generation (Solana, 1B supply), launch mechanics and vesting contracts setup, social and docs infrastructure ready, soft marketing rollout, and security audits.",
   },
   {
-    quarter: "Q2 2025",
-    title: "MVP Launch",
+    quarter: "May - June 2025",
+    title: "Activation",
     description:
-      "Release the first MVP of ViolaAI, deploy initial smart contracts, and publish whitepaper.",
+      "Launch of 5 Viola AI tools (chat, advisor, scan, news, dev). Platform accessible without login for 3 months.",
   },
   {
-    quarter: "Q3 2025",
-    title: "Community Growth",
+    quarter: "July - August 2025",
+    title: "Community Engagement",
     description:
-      "Start marketing campaign, build partnerships, and conduct private token sale.",
+      "Live updates based on feedback, usage analytics collection, live learning for AI engine and AMA sessions.",
   },
   {
-    quarter: "Q4 2025",
-    title: "Beta & Token Sale",
+    quarter: "Sept - Dec 2025",
+    title: "Viola AI V1.1 & Telegram Bot Beta",
     description:
-      "Launch public token sale, beta platform, and expand our global presence.",
+      "Add contract deployment features, release Telegram Bot, test whitelist/premium system, unlock premium tools via staking, and early access to project scoring system.",
   },
   {
-    quarter: "Q1 2026",
-    title: "Mainnet Launch",
+    quarter: "Jan - Mar 2026",
+    title: "ViolaLaunch Alpha & Revenue Infra",
     description:
-      "Deploy on mainnet with governance, user incentives, and global AI infrastructure.",
+      "Alpha of ViolaLaunch (launchpad), $Viola payment gateway, optional Stripe checkout, partner tools integration, developer API (gated), and multichain EVM test phase.",
   },
 ];
 
@@ -41,7 +41,7 @@ export default function Roadmap() {
       id="roadmap"
       className="bg-white py-24 px-4 md:px-12 text-white relative overflow-hidden"
     >
-      <div className="max-w-5xl mx-auto" id="roadmap">
+      <div className="max-w-5xl mx-auto">
         <h2 className="text-4xl font-bold text-center text-yellow-400 mb-16">
           Roadmap
         </h2>
