@@ -17,11 +17,7 @@ export default function EarlyAccess() {
   };
 
   return (
-    <section className="relative w-full py-20 px-6 md:px-12 bg-yellow-50 overflow-hidden">
-      {/* Background ornaments */}
-      <div className="absolute top-10 left-1/2 transform -translate-x-1/2 w-72 h-72 bg-yellow-200 opacity-20 rounded-full blur-3xl animate-pulse" />
-      <div className="absolute bottom-0 left-0 w-40 h-40 bg-yellow-300 opacity-10 rounded-full blur-2xl animate-ping" />
-
+    <section className="relative w-full py-20 px-6 md:px-12 bg-[#FAECD8] overflow-hidden">
       <div className="max-w-3xl mx-auto text-center relative z-10">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}

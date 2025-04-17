@@ -17,6 +17,30 @@ const teamMembers = [
     image: "/images/team/user2.avif",
     bio: "Expert in full-stack development and AI infrastructure, leading the codebase with scalable architecture.",
   },
+  {
+    name: "Amelia Zhang",
+    role: "Chief Scientific Officer",
+    image: "/images/team/user3.png",
+    bio: "PhD in molecular biology with a decade of experience in biomedical data science and AI-driven diagnostics.",
+  },
+  {
+    name: "Carlos Mendes",
+    role: "Product Designer",
+    image: "/images/team/user4.jpeg",
+    bio: "Crafts delightful user experiences that bridge complex data with intuitive interfaces. Passionate about health tech.",
+  },
+  {
+    name: "Fatima Noor",
+    role: "AI Researcher",
+    image: "/images/team/user5.webp",
+    bio: "Specializes in deep learning models for medical imaging and predictive diagnostics. Advocate for ethical AI.",
+  },
+  {
+    name: "Daniel Rivera",
+    role: "Operations Manager",
+    image: "/images/team/user6.webp",
+    bio: "Ensures smooth cross-functional operations and drives project execution with precision and excellence.",
+  },
 ];
 
 export default function OurTeam() {
@@ -25,16 +49,16 @@ export default function OurTeam() {
   );
 
   return (
-    <section className="bg-white py-24 px-4 md:px-10 text-white relative">
+    <section className="bg-[#FAECD8] py-24 px-4 md:px-10 text-white relative" id="ourTeams">
       <div className="max-w-5xl mx-auto text-center">
         <h2 className="text-4xl md:text-5xl font-bold mb-4 text-yellow-500">
           Our Core Team
         </h2>
         <p className="text-gray-600 mb-16 max-w-2xl mx-auto">
           Meet the visionaries behind{" "}
-          <span className="text-yellow-600 font-semibold">Viola Research</span> — the
-          pioneers shaping the future of precision medicine through AI and data
-          science.
+          <span className="text-yellow-600 font-semibold">Viola Research</span>{" "}
+          — the pioneers shaping the future of precision medicine through AI and
+          data science.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">

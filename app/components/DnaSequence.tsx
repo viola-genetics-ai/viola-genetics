@@ -32,7 +32,7 @@ export default function DNAVisualizer() {
   };
 
   return (
-    <div className="flex flex-col items-center gap-8 p-10 bg-white min-h-screen">
+    <div className="flex flex-col items-center gap-8 p-10 bg-[#FAECD8] min-h-screen">
       <h1 className="text-4xl font-extrabold text-black font-mono tracking-tight">
         DNA Generator Visualizer
       </h1>

@@ -43,25 +43,25 @@ export default function Navbar() {
             Home
           </Link>
           <Link
-            href="#roadmap"
+            href="#aboutUs"
             className="hover:text-yellow-500 transition font-medium"
           >
             About
           </Link>
           <Link
-            href="#whitepaper"
+            href="#ourFeatures"
             className="hover:text-yellow-500 transition font-medium"
           >
             Features
           </Link>
           <Link
-            href="#whitepaper"
+            href="#analysis"
             className="hover:text-yellow-500 transition font-medium"
           >
             Analysis
           </Link>
           <Link
-            href="#whitepaper"
+            href="#roadmap"
             className="hover:text-yellow-500 transition font-medium"
           >
             Roadmap

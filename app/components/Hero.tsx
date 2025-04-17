@@ -15,7 +15,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="relative w-full min-h-screen flex items-center justify-center overflow-hidden bg-white text-black px-6">
+    <section className="relative w-full min-h-screen flex items-center justify-center overflow-hidden bg-[#FAECD8] text-black px-6">
       <div className="relative z-20 flex flex-col md:flex-row items-center justify-between max-w-7xl w-full gap-10">
         {/* Left Content */}
         <div className="text-center md:text-left max-w-xl">
@@ -81,10 +81,7 @@ export default function Hero() {
           className="relative w-full md:w-1/2 max-w-md flex items-center justify-center"
         >
           {/* Inset Background */}
-          <div className="absolute w-80 h-80 rounded-full bg-white shadow-inner-ring z-0" />
-
-          {/* Green Pulse Effect */}
-          <div className="absolute w-72 h-72 rounded-full pulse-ring z-10" />
+          <div className="absolute w-80 h-80 rounded-full shadow-inner-ring z-0" />
 
           {/* Image */}
           <video
@@ -93,7 +90,7 @@ export default function Hero() {
             loop
             muted
             playsInline
-            className="relative z-20 w-[600px] h-[600px] rounded-full object-contain ring-4 ring-white"
+            className="relative z-20 w-[600px] h-[600px] rounded-full object-contain"
           />
         </motion.div>
       </div>
