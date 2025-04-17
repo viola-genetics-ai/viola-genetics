@@ -7,7 +7,7 @@ import { Check, Copy } from "lucide-react";
 export default function Hero() {
   const [copied, setCopied] = useState(false);
 
-  const contractAddress = "-"; // Ganti dengan CA aslimu
+  const contractAddress = "Da66Bo1NuMvLLJU2HGVEcVQB4Bfr6Bzej644BUSrpump"; // Ganti dengan CA aslimu
 
   const handleCopy = () => {
     navigator.clipboard.writeText(contractAddress);
